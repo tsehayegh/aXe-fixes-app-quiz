@@ -69,8 +69,8 @@ function renderQuestionChoices(selectedIndex, choiceIndices) {
   $('.question').html(`${methods[selectedIndex].definition}`);
   $('.choicesContainer').empty();
   choiceIndices.map(function(ind){
-    $('.choicesContainer').append(`<label class="labelContainer cont-${ind}">
-        <input type = "radio" name ="choice" value = ${methods[ind].method} aria-labelledby = 'choice-'${ind}>
+    $('.choicesContainer').append(`<label class = "labelContainer cont-${ind}">
+        <input type = "radio" name ="choice" value = ${methods[ind].method} aria-labelledby = 'choice-${ind}'>
         <code class ="jsMethods">${methods[ind].method}</code></label><br>`);   
   });
 }
