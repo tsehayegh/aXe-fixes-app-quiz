@@ -70,11 +70,9 @@ function renderQuestionChoices(selectedIndex, choiceIndices) {
   $('.choicesContainer').empty();
   choiceIndices.map(function(ind){
     $('.choicesContainer').append(`<label class = "labelContainer cont-${ind}">
-        <input type = "radio" name ="choice" 
-                value = ${methods[ind].method}
-                id = "radio-${ind}" 
-                aria-labelledby = "radio-${ind}">
-        <code class ="jsMethods">${methods[ind].method}</code></label><br>`);   
+                                  <input type = "radio" name ="choice" 
+                                          value = ${methods[ind].method}>
+                                  <code class ="jsMethods">${methods[ind].method}</code></label><br>`);   
   });
 }
 
@@ -222,4 +220,4 @@ function handleFocus(){
   });
 }       
 $(handleFocus);     
-      
+ 
